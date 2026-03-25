@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PopcornPicks</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎬PopcornPicks🍿</h1>
+<p class="subtitle">Can't decide what to watch?</p>
+<p class="subtitle">No more scrolling. Just great picks ❤️.</p>
+
+<button class="main-btn" onclick="showFilters()">Find Your Picks 🍿</button>
+<button class="surprise-btn" onclick="randomPicks()">Surprise Me 🎲</button>
+
+<div id="filters" class="hidden">
+
+<h2>Your Preferences</h2>
+
+
+<div class="filter-row">
+
+<select id="type">
+<option value="">Type</option>
+<option value="movie">Movie</option>
+<option value="series">Series</option>
+<option value="anime">Anime</option>
+<option value="documentary">Documentary</option>
+</select>
+
+<select id="genre">
+<option value="">Genre</option>
+<option value="action">Action</option>
+<option value="drama">Drama</option>
+<option value="thriller">Thriller</option>
+<option value="comedy">Comedy</option>
+</select>
+
+<select id="language">
+<option value="">Language</option>
+<option value="english">English</option>
+<option value="hindi">Hindi</option>
+<option value="bengali">Bengali</option>
+<option value="korean">Korean</option>
+<option value="japanese">Japanese</option>
+</select>
+
+<!-- NEW: Mood Filter -->
+<select id="mood">
+<option value="">Mood</option>
+<option value="fun">Fun</option>
+<option value="dark">Dark</option>
+<option value="emotional">Emotional</option>
+<option value="mindblowing">Mind-blowing</option>
+<option value="chill">Chill</option>
+</select>
+
+</div>
+
+<button class="main-btn" onclick="findSuggestion()">Show My Picks</button>
+
+</div>
+
+<!-- NEW: Results Title -->
+<h2 id="results-title"></h2>
+
+<div id="results" class="results-grid"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+<div class="footer">
+
+<p class="footer-text">
+All Data & Images are taken from 'The Movie Database' (TMDb) - <a href="https://www.themoviedb.org/">www.themoviedb.org</a> using their OFFICIAL API provided.
+PopcornPicks is an INDEPENDENT site and is NOT AFFILIATED with TMDb in any way.
+
+<p class="footer-sub">
+PopcornPicks is currently in PROTOTYPE phase.
+</p>
+
+<p class="footer-sub">
+<a href="#">Suggest something as Feedback</a>
+</p>
+
+<p class="footer-sub">
+© 2026 PopcornPicks. All rights reserved. Any unauthorized commercial use prohibited.
+</p>
+
+</div>
+
+</body>
+</html>
